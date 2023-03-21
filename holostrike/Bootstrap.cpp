@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: MIT
 
 #include "Ogre.h"
-#include "OGRE/Bites/OgreApplicationContext.h"
+#include "build/OGRE/Bites/OgreApplicationContext.h"
 
 //! [key_handler]
 class KeyHandler : public OgreBites::InputListener
