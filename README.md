@@ -10,3 +10,4 @@ To install the project, follow these steps:
 3. Copy the `build/sdk/include/bullet` folder to `holostrike/holostrike/build/`.
 4. Copy the `build/sdk/include/OGRE` folder to `holostrike/holostrike/build/`.
 5. Copy the `build/sdk/lib` folder to `holostrike/holostrike/build/`.
+6. Copy the `build/sdk/media` folder to the root `/`
