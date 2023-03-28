@@ -20,15 +20,15 @@ class KeyHandler : public OgreBites::InputListener
 };
 //! [key_handler]
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-//! [constructor]
+    //! [constructor]
     OgreBites::ApplicationContext ctx("OgreTutorialApp");
     ctx.initApp();
-//! [constructor]
+    //! [constructor]
 
-//! [setup]
-    // get a pointer to the already created root
+    //! [setup]
+        // get a pointer to the already created root
     Ogre::Root* root = ctx.getRoot();
     Ogre::SceneManager* scnMgr = root->createSceneManager();
 
@@ -60,15 +60,15 @@ int main(int argc, char *argv[])
     Ogre::Entity* ent = scnMgr->createEntity("Sinbad.mesh");
     Ogre::SceneNode* node = scnMgr->getRootSceneNode()->createChildSceneNode();
     node->attachObject(ent);
-//! [setup]
+    //! [setup]
 
-//! [main]
-    // register for input events
+    //! [main]
+        // register for input events
     KeyHandler keyHandler;
     ctx.addInputListener(&keyHandler);
 
     ctx.getRoot()->startRendering();
     ctx.closeApp();
-//! [main]
+    //! [main]
     return 0;
 }

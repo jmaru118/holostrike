@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BasicApp.cpp" />
     <ClCompile Include="Bootstrap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicApp.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -136,7 +140,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\windo\Documents\Projects\holostrike\holostrike\build\bullet;C:\Users\windo\Documents\Projects\holostrike\holostrike\build\OGRE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\windo\Documents\Projects\holostrike\holostrike\build\CEGUI;C:\Users\windo\Documents\Projects\holostrike\holostrike\build;C:\Users\windo\Documents\Projects\holostrike\holostrike\build\ois;C:\Users\windo\Documents\Projects\holostrike\holostrike\build\bullet;C:\Users\windo\Documents\Projects\holostrike\holostrike\build\OGRE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +148,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\windo\Documents\Projects\holostrike\holostrike\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OgreBites.lib;OgreBullet.lib;OgreMain.lib;OgreMeshLodGenerator.lib;OgreOverlay.lib;OgrePaging.lib;OgreProperty.lib;OgreRTShaderSystem.lib;OgreTerrain.lib;OgreVolume.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OgreBites.lib;OgreBullet.lib;OgreMain.lib;OgreMeshLodGenerator.lib;OgreOverlay.lib;OgrePaging.lib;OgreProperty.lib;OgreRTShaderSystem.lib;OgreTerrain.lib;OgreVolume.lib;OIS.lib;CEGUIBase-0.lib;CEGUICommonDialogs-0.lib;CEGUICoreWindowRendererSet.lib;CEGUIExpatParser.lib;CEGUIFreeImageImageCodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
